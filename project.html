@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./inc/assets/css/board.css">
+    <link rel="stylesheet" type="text/css" href="./inc/assets/css/sidenav.css">
+    <link rel="stylesheet" type="text/css" href="./inc/assets/css/vars.css">
+    <link rel="stylesheet" type="text/css" href="./inc/assets/css/project-details.css">
+    <link rel="stylesheet" type="text/css" href="./inc/assets/css/project.css">
+
+
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+
+    <title>backlog</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <div class="sidenavmenu">
+                <p>Reflex kanban</p>
+                <nav>
+                    <ul>
+                        <li><a href="backlog.html">backlog</a></li>
+                        <li><a href="board.html">Board</a></li>
+                        <li class="active"><a href="project.html">Project setting</a></li>
+                        <li><a href="usersetting.html"> User Settings</a></li>
+                    </ul>
+                </nav>
+                <div class="logspan"><a href="#">Log Out</a></div>
+            </div>
+        </div>
+        <div class="main-project">
+            <h3>Kanban Board | Project-Setting</h3>
+            <form action="">
+                <div class="project-icon">
+                    <img src="pic.jpg" alt="" srcset="" style="height: 100px; width:100px">
+                    <h4>project icon</h4>
+                </div>
+                <div class="name-key">
+                    <div class="inputdiv">
+                        <p class="name">Name</p>
+                        <input type="text" placeholder="project-name" >
+                    </div>
+                    <div class="inputdiv">
+                        <p  class="name">Key</p>
+                        <input type="text" placeholder="project-key">
+                    </div>
+                </div>
+                <div class="inputdiv">
+                    <p>Project leader</p>
+                    <select name="leader" id="">
+                        <option value="">choose your leader</option>
+                        <option value="">kiran sharma </option>
+                        <option value="">prasant bhandari </option>
+                        <option value="">ankit chapagain</option>
+                        <option value="">sostika upreti</option>
+                        <option value="">roshan shrestha</option>
+                        <option value="">dipak giri</option>
+                        <option value="">kabita sharma</option>
+                    </select>
+                </div>
+                <h5 >make sure your leader has access to change team members</h5>
+            </form>
+            <div class="default-assigne">
+                <div class="default-assigne-body">
+                    <p>Default assignee</p>
+                    <select name="unassigned" id="">
+                        <option value="">default-assigne</option>
+                        <option value="">Team-leader</option>
+                    </select>
+                </div>
+                <button>Save</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jsbacklog.js"></script>
+
+
+</html>

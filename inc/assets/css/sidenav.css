@@ -1,0 +1,63 @@
+
+body{
+    background:var(--off-white);
+}
+.container{
+max-width: 99%;
+display: flex;
+}
+
+
+
+.sidenav{
+    display: flex;
+    padding:0.5rem ;
+    min-height:20%;
+}
+p{
+    padding:0 1rem;
+    font-size: 1.2rem;
+    font-family: var(--text-font);
+
+}
+.sidenavmenu{
+    width:200px;
+    background: var(--white);
+    padding-top:0.7rem;
+}
+nav{
+    height:79vh;
+}
+
+nav ul{
+    padding: 1rem 0 0 30%;
+    list-style: none;
+}
+ .main,.main1,.main-title{
+    padding-top: 0.3rem;
+}
+nav ul li{
+    padding: 0.5rem 0 0.5rem 1rem ;
+    margin-bottom: 4px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-style: var(--text-font);
+    color: var(--black);
+    font:1rem;
+    font-weight: bolder;
+}
+
+
+.logspan{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.4rem;
+}
+
+.logspan a{
+    text-decoration: none;
+    color: red;
+    font-size: 1.2rem;
+}

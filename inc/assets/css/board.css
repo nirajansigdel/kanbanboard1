@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--text-font);
+}
+
+body {
+	background: var(--off-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+	font-family: 'Raleway';
+}
+
+p,
+span,
+.memo-text {
+	font-family: 'Poppins';
+	font-size: 12px
+}
+
+.container {
+	max-width: 85%;
+	margin: auto;
+}
+
+.forheader {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.4rem;
+	font-size: 1.4rem;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+}
+
+header ul {
+
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+header ul li a {
+	font-size: 40px;
+	color: black;
+
+}
+
+nav ul li.active,
+nav ul li:hover {
+	background-color: rgba(52, 152, 219, 1);
+	border-radius: 50px 0 0 50px;
+}
+
+nav ul li.active a,
+nav ul li:hover a {
+	color: white;
+}
+
+.container .row-1 {
+	text-align: center;
+	height: 10vh;
+
+}
+
+.row-1 select,
+button {
+	border-radius: 14px;
+	width: 180px;
+	height: auto;
+}
+
+.row-1 button {
+	color: white;
+	background: blue;
+}
+
+.row-2 {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.card {
+	margin: 1rem;
+	width: 22vw;
+	background: #fafafa;
+
+}
+
+.card,
+.memo {
+	border: 1px solid #cccccc;
+	border-radius: 12px;
+	box-shadow: 0 2px 4px 1px #cccccc;
+
+}
+
+.card-title {
+	height: 2rem;
+	background: #4B7BF5;
+	border-radius: 12px 12px 0 0;
+	font-size: 1.2rem;
+	color: #ffffff;
+}
+
+.card-body {
+	min-height: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.memo {
+	width: 90%;
+	font-size: 0.8rem;
+	margin: 1rem 0 6px 6px;
+
+}
+
+.card-title,
+.memo-title,
+.memo-body {
+	padding-left: 0.5rem;
+	padding-bottom: 0.4rem;
+}
+
+.memo-body {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 94%;
+}
+
+.memo-body span {
+	font-size: 0.8rem;
+	font-family: 'poppions';
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=7, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="./inc/assets/css/backlog.css">
+   <link rel="stylesheet" type="text/css" href="./inc/assets/css/sidenav.css">
+   <link rel="stylesheet" type="text/css" href="./inc/assets/css/vars.css">
+   <link rel="stylesheet" type="text/css" href="./inc/assets/css/project-details.css">
+
+
+   <!-- https://material.io/resources/icons/?style=baseline -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+   <!-- https://material.io/resources/icons/?style=outline -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+   <!-- https://material.io/resources/icons/?style=round -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+   <!-- https://material.io/resources/icons/?style=sharp -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+   <!-- https://material.io/resources/icons/?style=twotone -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+
+   <title>backlog</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="sidenav">
+         <div class="sidenavmenu">
+            <p>Reflex kanban</p>
+            <nav>
+               <ul>
+                  <li class="active"><a href="backlog.html">backlog</a></li>
+                  <li><a href="board.html">Board</a></li>
+                  <li><a href="project.html">Project setting</a></li>
+                  <li><a href="usersetting.html"> User Settings</a></li>
+               </ul>
+            </nav>
+            <div class="logspan"><a href="#">Log Out</a></div>
+         </div>
+      </div>
+
+      <div class="main">
+         <div class="main1">
+            <div class="main-title">
+               <p>KanBan Development | Backlog</p>
+            </div>
+            <div class="main-container">
+               <div class="main-container-row1">
+                  <h4>Sprint2</h4>
+                  <button>start</button>
+               </div>
+               <div class="rightconatiner1-row2">
+                  <div class="memo">
+                     <div class="memo-title">Designed to End:</div>
+                     <div class="memo-body">
+                        <span class="story">Story Designed:</span>
+                        <span class="assigned">Assigned:<i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="rightconatiner1-row2">
+                  <div class="memo">
+                     <div class="memo-title">Designed to End:</div>
+                     <div class="memo-body">
+                        <span class="story">Story Designed:</span>
+                        <span class="assigned">Assigned:<i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="rightconatiner1-row2">
+                  <div class="memo">
+                     <div class="memo-title">Designed to End:</div>
+                     <div class="memo-body">
+                        <span class="story">Story Designed:</span>
+                        <span class="assigned">Assigned:<i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                     </div>
+                  </div>
+               </div>
+               <span class="add"><a href="#" id="plus"><i class="fa fa-plus" aria-hidden="true"></i></a>Add Issue</span>
+
+
+            </div>
+
+            <div class="main-container">
+               <div class="main-container-row1">
+                  <h3>Sprint1</h3>
+                  <button class="complete"
+                     style="background-color:#eaeaea; color:rgb(0, 0, 0); width:6rem;">Completed</button>
+               </div>
+               <div class="rightconatiner1-row2">
+                  <div class="memo">
+                     <div class="memo-title">Designed to End:</div>
+                     <div class="memo-body">
+                        <span class="story">Story Designed:</span>
+                        <span class="assigned">Assigned:<i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+      <div class="project-details-container">
+         <div class="project-details">
+            <h5>Project Details</h5>
+            <div class="sprint-container">
+               <span>Sprint 1</span>
+               <div class="days-container">
+                  <div class="days-input-group">
+                     <small>
+                        <span class="material-icons-round" id="arrow-up">
+                           arrow_upward
+                        </span>
+                        <input class="days-input" type="number" id="arrow-input" value="1" min="1" max="30">
+                        <span class="material-icons-round" id="arrow-down">
+                           arrow_downward
+                        </span>
+                     </small>
+                  </div>
+                  <small><span> days</span></small>
+               </div>
+               <button class="btn btn-primary">Start</button>
+            </div>
+
+            <div class="sprint-container">
+               <span>Sprint 1</span>
+               <div class="days-container started-sprint">
+                  <small>
+                     <span>14</span>
+                     <span> days</span>
+                  </small>
+               </div>
+               <button class="btn btn-danger">Stop</button>
+            </div>
+
+            <div class="sprint-container">
+               <span>Sprint 2</span>
+               <div class="days-container completed-sprint">
+                  <small>
+                     <span>6</span>
+                     <span> days</span>
+                  </small>
+               </div>
+               <button class="btn btn-disabled">Complete</button>
+            </div>
+         </div>
+         <div class="team-members-container">
+            <h5>Team Members</h5>
+            <div class="team-member">
+               <img src="./inc/assets/img/pic.jpg">
+               <span>John Doe</span>
+               <span><small>Admin</small></span>
+            </div>
+
+            <div class="team-member">
+               <img src="./inc/assets/img/pic.jpg">
+               <span>John Doe</span>
+               <span><small>Admin</small></span>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+</body>
+<script src="jsbacklog.js"></script>
+
+
+</html>

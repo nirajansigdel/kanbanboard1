@@ -1,0 +1,132 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    border: none;
+    outline: none;
+    background: #eaeaea;
+    text-align: center;
+    width: 35%;
+}
+
+.project-details-container {
+    margin-top: 4.7%;
+    padding: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    width: -webkit-fill-available;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.project-details-container h5 {
+    text-align: center;
+}
+
+.project-details,
+.team-members-container {
+    min-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.sprint-container,
+.team-member {
+    min-width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.started-sprint {
+    color: #3498DB;
+}
+
+.completed-sprint {
+    color: darkslategray;
+}
+
+.sprint-container+span {
+    width: 30%;
+}
+
+.days-container {
+    display: flex;
+}
+
+.days-input-group {
+    width: max-content;
+}
+
+.days-input-group>small {
+    border: 1px solid black;
+    border-radius: 4px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.days-input-group span.material-icons-round {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sprint-container>button {
+    justify-self: flex-end;
+    width: 30%;
+}
+
+.btn {
+    width: auto;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3498DB;
+    border-color: #3498DB;
+}
+
+.btn-danger {
+    background-color: #ff1111;
+    border-color: #ff1111;
+}
+
+.btn-disabled {
+    background-color: #dddddd;
+    color: darkslategray;
+    cursor: not-allowed;
+}
+
+.btn-primary,
+.btn-danger {
+    color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+img {
+
+    width:37px;
+    height:37px;
+    border-radius:50%;
+
+}

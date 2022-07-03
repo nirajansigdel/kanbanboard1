@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./inc/assets/css/board.css">
+	<link rel="stylesheet" type="text/css" href="./inc/assets/css/sidenav.css">
+	<link rel="stylesheet" type="text/css" href="./inc/assets/css/vars.css">
+	<link rel="stylesheet" type="text/css" href="./inc/assets/css/project-details.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+		integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+
+	<!-- https://material.io/resources/icons/?style=baseline -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+	<!-- https://material.io/resources/icons/?style=outline -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+	<!-- https://material.io/resources/icons/?style=round -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+	<!-- https://material.io/resources/icons/?style=sharp -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+	<!-- https://material.io/resources/icons/?style=twotone -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+
+	<title>KANBAN</title>
+</head>
+<script src="java.js"></script>
+
+<body>
+
+
+
+	<div class="container">
+		<div class="sidenav">
+			<div class="sidenavmenu">
+				<p>Reflex kanban</p>
+				<nav>
+					<ul>
+						<li ><a href="backlog.html">backlog</a></li>
+						<li class="active"><a href="board.html">Board</a></li>
+						<li><a href="project.html">Project setting</a></li>
+						<li><a href="usersetting.html"> User Settings</a></li>
+					</ul>
+				</nav>
+				<div class="logspan"><a href="#">Log Out</a></div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="forheader">
+				<header>kanban</header>
+				<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			</div>
+			<div class="row-1">
+				<select class="select">
+					<option>select board</option>
+					<option>1select board</option>
+					<option>2select board</option>
+					<option>3select board</option>
+				</select>
+				<button class="create-btn">Create New Board</button>
+			</div>
+
+			<div class="row-2">
+				<div class="card backlog-card">
+					<div class="card-title">Backlog</div>
+					<div class="card-body">
+						<div class="memo backlog-memo">
+							<div class="memo-title">Designed to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+						<div class="memo backlog-memo">
+							<div class="memo-title"> to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="card todo-card">
+					<div class="card-title">Todo</div>
+					<div class="card-body">
+						<div class="memo todo-memo">
+							<div class="memo-title">Designed to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="card in-progress-card">
+					<div class="card-title">Inprogress</div>
+					<div class="card-body">
+						<div class="memo in-progress-memo">
+							<div class="memo-title">Designed to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<div class="card to-be-tested-card">
+					<div class="card-title">Tobetested</div>
+					<div class="card-body">
+						<div class="memo to-be-tested-memo">
+							<div class="memo-title">Designed to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="card reopen-card">
+					<div class="card-title">Reopen</div>
+					<div class="card-body">
+						<div class="memo reopen-memo">
+							<div class="memo-title">Designed to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="card done-card">
+					<div class="card-title">Done</div>
+					<div class="card-body">
+						<div class="memo done-memo">
+							<div class="memo-title">Designed to End:</div>
+							<div class="memo-body">
+								<span class="story">Story Designed:</span>
+								<span class="assigned">Assigned:<i class="fa fa-user-circle-o"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+
+
+</body>
+
+
+</html>

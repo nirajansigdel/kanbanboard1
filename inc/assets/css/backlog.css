@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+body {
+    background: var(--off-white);
+    display: flex;
+    gap: 1%;
+}
+
+nav ul li.active,
+nav ul li:hover {
+    background-color: rgba(52, 152, 219, 1);
+    border-radius: 50px 0 0 50px;
+}
+
+nav ul li.active a,
+nav ul li:hover a {
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.main1 {
+    padding-right: 0.6rem;
+
+}
+
+
+.main-container {
+    background-color: var(--white);
+    width: 550px;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.main-container-row1 {
+
+    width: 98%;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container-row1 button {
+    background-color: rgba(52, 152, 219, 1);
+    color: white;
+    border: 2px solid white;
+    height: 2rem;
+    border-radius: 8px;
+    width: 3.4rem;
+}
+
+span.add {
+    color: var(--primary-color);
+
+}
+
+span.lastadd {
+    color: #C4C4C4;
+
+}
+
+
+span.add #plus {
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    padding-left: 80%;
+    padding-right: 0.2rem;
+
+}
+
+span.lastadd #lastplus {
+    font-size: 0.7rem;
+    color: #C4C4C4;
+    padding-left: 60%;
+    padding-right: 0.2rem;
+
+}
+
+.memo {
+    border-bottom: 1px solid #000000;
+    width: auto;
+    padding: 0.1rem;
+    margin: 0.5rem;
+
+}
+
+
+.memo-title,
+.memo-body {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.memo-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.memo-body span {
+    font-size: 0.9rem;
+
+}
+
+.maincontainerside-body {
+    background-color: var(--white);
+    margin-top: 2.8rem;
+    width: AUTO;
+    display: block;
+    flex-flow: row wrap;
+    height: 70%;
+
+}
+
+.lastadd {
+    padding-left: 50%;
+
+}
+
+.lastadd,
+.lastadd a {
+    color: #C4C4C4;
+
+}
+
+.lastadd a {
+    padding: 0 6px;
+
+}
+
+.maincontainerside-body1-contain1 .lastbutton {
+    width: auto;
+    font-size: 14px;
+
+}
+
+.maincontainerside-body1,
+.maincontainerside-body2 {
+    padding: 0 .2rem 0 0;
+}
+
+.maincontainerside-body1-title,
+.maincontainerside-body2-title {
+    padding: 1rem 0.4rem 1rem 0.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.maincontainerside-body1-contain1 p {
+    font-size: 0.9rem;
+
+}
+
+.maincontainerside-body1-contain1 {
+    justify-content: space-between;
+    padding: 0.1rem 0.7rem 0 0;
+    width: 99%;
+    margin-bottom: 0.6rem;
+}
+
+.project-detial {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+
+}
+
+.roundfont {
+    width: auto;
+    border: solid 1px #000000;
+    border-radius: 8px;
+    height: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.roundfont span .days {
+    font-size: 1rem;
+}
+
+.roundfont .material-icons-round {
+    font-size: 0.9rem;
+}
+
+.lastbutton {
+    width: auto;
+    outline: none;
+    padding: 0.1rem;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+.maincontainerside-body2 {
+    padding: 1rem 0.5rem 0 0.3rem;
+    font-family: var(--text-font);
+}
+
+.maincontainerside-body2-contain {
+    font-family: var(--text-font);
+    width: 99%;
+    padding: 0.1rem 0.3rem 0 0;
+}
+
+.maincontainerside-body2-contain .circleimage ul,
+.name_role ul {
+    list-style: none;
+
+}
+
+.circleimage img {
+    width: 40px;
+    border: 2px solid #C4C4C4;
+    background: #C4C4C4;
+    border-radius: 50%;
+
+}
+
+.name_role {
+    width: 99%;
+    padding: 0.3rem 0 0 0.5rem;
+}
+
+.name_role ul {
+    justify-content: space-between;
+
+}
+
+.main,
+.name_role ul,
+.maincontainerside-body1-contain1,
+.maincontainerside-row1,
+.maincontainerside-body2-contain .circleimage ul,
+.maincontainerside-body2-contain {
+    display: flex;
+
+}
+
+.name_role ul li #name {
+    font-size: 14px;
+}
+
+.name_role ul li #role {
+    font-size: 12px;
+}
+
+
+span input {
+    width: 1rem;
+    border: none;
+
+}
+
+.days {
+    font-size: 1rem;
+    padding-right: 4px;
+    padding-left: 1px;
+}
+
+.sprint1 {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1rem;
+}
+.laststart
+{
+background-color: #3498DB;
+padding: 0 0.8rem;` 
+}
